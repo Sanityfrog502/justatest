@@ -1,7 +1,7 @@
 const form = document.querySelector('form');
 const input = document.querySelector('input');
 
-document.getElementById('form1').addEventListener('submit', async event => {
+document.getElementById('form').addEventListener('submit', async event => {
     event.preventDefault();
     window.navigator.serviceWorker.register('./sw.js', {
         scope: __uv$config.prefix
